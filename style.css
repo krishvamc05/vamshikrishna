@@ -626,3 +626,81 @@ nav {
     padding-left: 40px;
   }
 }
+
+/* =========================================
+   Consulting Services Grid
+   ========================================= */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background: var(--bg-secondary);
+  padding: 40px 30px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  transition: var(--transition);
+  text-align: center;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px;
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--accent-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.service-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* =========================================
+   Industries Grid
+   ========================================= */
+.industries-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.industry-pill {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 500;
+  color: var(--text-main);
+  transition: var(--transition);
+  font-size: 1.05rem;
+}
+
+.industry-pill:hover {
+  background: rgba(249, 115, 22, 0.1);
+  border-color: var(--accent-secondary);
+  color: var(--accent-secondary);
+  transform: translateY(-2px);
+}
+
